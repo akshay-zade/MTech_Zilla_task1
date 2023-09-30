@@ -1,0 +1,122 @@
+:root {
+    --white-color : rgb(255 255 255 / 1) ;
+    --color-primary: rgb(43 43 43 / 1);
+    --color-primary-light: rgb(43 43 43 / 80%);
+    --color-gray: rgb(118 118 118 / 1);
+    --color-light-gray : #F0F0F6;
+    --color-active: #FFB400;
+    --color-active-dark: rgb(0 58 208 / 1);
+    --destop-size: 768px
+}
+.contact,
+.form,
+.form form {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.form {
+    gap: 1em;
+}
+.form form {
+    gap: .5em;
+}
+.form form * {
+    width: 100%;
+    display: block;
+    background: var(--color-light-gray);
+    font-size: 1em;
+    height: 2.5em;
+    padding: .5em 1.125em;
+}
+.form form textarea {
+    height: 120px;
+}
+form input[type='submit'] {
+    cursor: pointer;
+    background: var(--color-active);
+    color: var(--color-white);
+}
+form input[type='submit']:hover {
+    background: var(--color-active-dark);
+}
+
+.sidebar,
+.sidebar .wrapper,
+.sidebar .wrapper > *  {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.sidebar .wrapper > *  {
+    gap: .5em;
+}
+
+.sidebar .wrapper h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    justify-content: center;
+}
+
+.sidebar .wrapper h4 .icon {
+    background: var(--color-active);
+    display: flex;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar .wrapper h4 .icon svg {
+    width: 1em;
+    height: 1em;
+    fill: var(--color-white);
+}
+h4 .label {
+    font-style: normal;
+    font-weight: 600;
+    color: var(--color-gray);
+}
+
+@media screen and (min-width: 768px) {
+    .contact {
+        gap: 2em;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .form {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .form h2 {
+        text-align: left;
+    }
+    form input[type='submit'] {
+        display: inline-block;
+        width: fit-content;
+    }
+    .sidebar h2 {
+        text-align: left;
+    }
+    .sidebar .wrapper h4 {
+        justify-content: start;
+    }
+    .details-gap {
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+section.wrapper {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10%;
+}
