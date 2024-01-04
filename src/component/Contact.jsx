@@ -23,6 +23,7 @@ const Contact = () => {
 
   const form = useRef();
 
+
   return (
     <>
       {/* <section className='contact' id='contact'>
@@ -58,9 +59,9 @@ const Contact = () => {
     </section> */}
 
       <section class="wrapper border rounded p-4 bg-dark">
-        <h1 class="text-white">Register Today</h1>
+        <h1 class="text-white">Apply Today</h1>
         <p class="text-white">Fill the data below.</p>
-        <form action="">
+        <form action="" >
           <div class="pb-2">
             <input
               type="text"
@@ -94,6 +95,7 @@ const Contact = () => {
               class="form-control"
               placeholder="Cover Letter"
               id="floatingTextarea"
+              
             ></textarea>
 
             <label for="floatingTextarea">Cover Letter</label>
@@ -102,8 +104,8 @@ const Contact = () => {
             <FileUpload />
     
           <div>
-            <button type="button" class="btn btn-secondary">
-              Register
+            <button type="button" class="btn btn-secondary" onClick={showAlert}>
+              Submit
             </button>
           </div>
         </form>
